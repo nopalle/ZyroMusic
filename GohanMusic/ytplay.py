@@ -139,9 +139,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ 📖", "playlist"),
+                InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", "playlist"),
             ],
-            [InlineKeyboardButton("🗑️ ᴛᴜᴛᴜᴘ 🗑️", "cls")],
+            [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", "cls")],
         ]
     )
     return mar
@@ -304,9 +304,9 @@ async def m_cb(b, cb):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ 📖", "playlist"),
+                InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", "playlist"),
             ],
-            [InlineKeyboardButton("🗑️ ᴛᴜᴛᴜᴘ 🗑️", "cls")],
+            [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", "cls")],
         ]
     )
         await cb.message.edit(stats, reply_markup=marr)
@@ -435,12 +435,12 @@ async def play(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
-                 InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                 InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
+                 InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
                 ],
-                [InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=f"{durl}")
+                [InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=f"{durl}")
                 ],
-                [InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ 🗑️", callback_data="cls")],
+                [InlineKeyboardButton(text="🗑ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
@@ -457,8 +457,8 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo = "final.png",
-        caption = f"🏷 **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** `{duration}`\n💡 **Status:** `Antrian ke {position}`\n" \
-                    + f"🎧 **Permintaan** {message.from_user.mention}",
+        caption = f"✧ **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** `{duration}`\n✧ **Status:** `Antrian ke {position}`\n" \
+                    + f"✧ **Permintaan** {message.from_user.mention}",
         reply_markup = keyboard
         )
         os.remove("final.png")
@@ -474,8 +474,8 @@ async def play(_, message: Message):
     callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
     await message.reply_photo(
     photo = "final.png",
-    caption = f"🏷 **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** `{duration}`\n💡 **Status:** `Memutar`\n" \
-                    + f"🎧 **Permintaan:** {message.from_user.mention}",
+    caption = f"✧ **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** `{duration}`\n✧ **Status:** `Memutar`\n" \
+                    + f"✧ **Permintaan:** {message.from_user.mention}",
     reply_markup = keyboard
     )
     os.remove("final.png")
