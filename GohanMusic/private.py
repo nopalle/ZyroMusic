@@ -21,17 +21,17 @@ tekan » /help « untuk melihat daftar perintah yang saya pinya</b>""",
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴏᴜᴘ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                   ],
                   [
                     InlineKeyboardButton(
-                        "💬 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                        "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton(
-                        "ᴏᴡɴᴇʀ 🧑🏻‍💻", url=f"https://t.me/{OWNER}")
+                        "ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER}")
                   ],
                   [
                     InlineKeyboardButton(
-                         "✨ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✨", url="https://github.com/nopalle/ZyroMusic")
+                         "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/nopalle/ZyroMusic")
                 ]
             ]
         )
@@ -64,9 +64,9 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                        "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton(
-                        "ᴏᴡɴᴇʀ 🧑🏻‍💻", url=f"https://t.me/{OWNER}")
+                        "ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER}")
                 ]
             ]
         )
@@ -98,9 +98,9 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                        "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton(
-                        "ᴏᴡɴᴇʀ 🧑🏻‍💻", url=f"https://t.me/{OWNER}")
+                        "ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER}")
                 ]
             ]
         )
