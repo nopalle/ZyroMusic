@@ -97,7 +97,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "*lagu yg lagi dinyanyiiny** di {}".format(message.chat.title)
+    msg = "**lagu yg lagi dinyanyiin** di {}".format(message.chat.title)
     msg += "\n• "+ now_playing
     msg += "\n• Permintaan "+by
     temp.pop(0)
@@ -139,9 +139,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ 📖", "playlist"),
+                InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", "playlist"),
             ],
-            [InlineKeyboardButton("🗑️ ᴛᴜᴛᴜᴘ 🗑️", "cls")],
+            [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", "cls")],
         ]
     )
     return mar
@@ -304,9 +304,9 @@ async def m_cb(b, cb):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("📖 ᴘʟᴀʏʟɪsᴛ 📖", "playlist"),
+                InlineKeyboardButton(" ᴘʟᴀʏʟɪsᴛ ", "playlist"),
             ],
-            [InlineKeyboardButton("🗑️ ᴛᴜᴛᴜᴘ 🗑️", "cls")],
+            [InlineKeyboardButton(" ᴛᴜᴛᴜᴘ ", "cls")],
         ]
     )
         await cb.message.edit(stats, reply_markup=marr)
@@ -346,7 +346,7 @@ async def m_cb(b, cb):
 @Client.on_message(command(["play", f"play@{bu}"]) & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("**🔄 di cari dulu mek**")
+    lel = await message.reply("**🔄 lagi dicari**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -432,10 +432,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("🥂 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ 🎁", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
+                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
                 ],
-                [InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ 🗑️", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -453,7 +453,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("**🎵 lagi di proses mek**")
+        await lel.edit("**🎵 lagi di proses**")
         ydl_opts = {"format": "141/bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -479,10 +479,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("🥂 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ 🎁", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
+                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
                 ],
-                [InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ 🗑️", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -493,7 +493,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("**🎵 lagi di proses mek**")
+        await lel.edit("**🎵 lagi di proses**")
         ydl_opts = {"format": "141/bestaudio[ext=m4a]"}
         
         try:
@@ -524,7 +524,7 @@ async def play(_, message: Message):
                         InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="❌ ʙᴀᴛᴀʟ ❌", callback_data="cls")],
+                    [InlineKeyboardButton(text="ʙᴀᴛᴀʟ", callback_data="cls")],
                 ]
             )
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -562,10 +562,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("🥂 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ 🎁", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
+                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
                 ],
-                [InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ 🗑️", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
             requested_by = message.from_user.first_name
@@ -582,7 +582,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"**🏷 Judul:** [{title}]({url})\n**⏱️ Durasi:** {duration}\n**💡 Status:** Antrian Ke {position}\n**🎧 Permintaan:** {message.from_user.mention}",
+            caption = f"**✧ Judul:** [{title}]({url})\n**✧ Durasi:** {duration}\n**✧ Status:** Antrian Ke {position}\n**✧ Permintaan:** {message.from_user.mention}",
                    reply_markup=keyboard)
        
     else:
@@ -601,14 +601,14 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"**🏷 Judul:** [{title}]({url})\n**⏱️ Durasi:** {duration}\n**💡 Status:** Memutar\n**🎧 Permintaan:** {message.from_user.mention}",
+            caption = f"**✧ Judul:** [{title}]({url})\n**✧ Durasi:** {duration}\n**✧ Status:** Memutar\n**✧ Permintaan:** {message.from_user.mention}",
                    reply_markup=keyboard)
         
         m = await client.send_photo(
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo = "final.png",
-            caption = f"**🏷 Judul:** [{title}]({url})\n**⏱️ Durasi:** {duration}\n**💡 Status:** Memutar\n**🎧 Permintaan:** {message.from_user.mention}",
+            caption = f"**✧ Judul:** [{title}]({url})\n**✧ Durasi:** {duration}\n**✧ Status:** Memutar\n**✧ Permintaan:** {message.from_user.mention}",
         )
         os.remove("final.png")
         return await lel.delete()
@@ -628,7 +628,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("bukan lo gblk", show_alert=True)
         return
-    await cb.message.edit("**🔄 lagi di proses mek**")
+    await cb.message.edit("**🔄 lagi di proses**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -663,10 +663,10 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("🥂 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ 🎁", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
+                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
                 ],
-                [InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ 🗑️", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
     requested_by = useer_name
@@ -686,7 +686,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
         photo = "final.png",
-        caption = f"**🏷 Judul:** [{title}]({url})\n**⏱️ Durasi:** {duration}\n**💡 Status:** Antrian Ke {position}\n**🎧 Permintaan:** {r_by.mention}",
+        caption = f"**✧ Judul:** [{title}]({url})\n**✧ Durasi:** {duration}\n**✧ Status:** Antrian Ke {position}\n**✧ Permintaan:** {r_by.mention}",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -705,7 +705,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
         photo = "final.png",
-        caption = f"**🏷 Judul:** [{title}]({url})\n**⏱️ Durasi:** {duration}\n**💡 Status:** Memutar\n**🎧 Permintaan:** {r_by.mention}",
+        caption = f"**✧ Judul:** [{title}]({url})\n**✧ Durasi:** {duration}\n**✧ Status:** Memutar\n**✧ Permintaan:** {r_by.mention}",
         reply_markup=keyboard,
         )
         os.remove("final.png")
