@@ -40,12 +40,12 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/{OWNER}"),
+                        "🧑🏻ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/{OWNER}"),
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}")
                   ],[
                     InlineKeyboardButton(
-                         "🛠 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🛠", url="https://github.com/nopalle/ZyroMusic")
+                         "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/nopalle/ZyroMusic")
 
                 ]
             ]
@@ -59,7 +59,7 @@ async def ping_pong(client: Client, m: Message):
     m_reply = await m.reply_text("NGEN...")
     delta_ping = time() - start
     await m_reply.edit_text(
-        f"{emoji.PING_PONG} **TOTT**\n"
+        f"**TOTT**\n"
         f"`{delta_ping * 1000:.3f} ms`"
     )
 
