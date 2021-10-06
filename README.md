@@ -1,6 +1,6 @@
 ### Zyro Music 🎵
 <p align="center">
-  <img src="https://telegra.ph/file/ce8487c5293824c1d4afa.jpg">
+  <img src="https://telegra.ph/file/5af055e0e9e4a7409b9cd.jpg">
 </p>
 Cara termudah untuk membuat Bot ini
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/nopalle/ZyroMusic"><img src="https://img.shields.io/badge/DEPLOY KE-HEROKU-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
@@ -12,10 +12,10 @@ Dapatkan STRING SESSION klik tombol dibawah untuk mendapatkan string (P)
 Jika ada pertanyaan silahkan hubungi kami di grup atau di PM owner
 <p>
     <a href="https://t.me/akbarnfal" target="blank"><img src="https://img.shields.io/badge/OWNER-nopal-blue?style=plastic&logo=telegram"width="300" height="40"/></a>
-    <a href="https://t.me/joinsinidongg" target="blank"><img src="https://img.shields.io/badge/GROUP-Cool Buddies-blue?style=plastic&logo=telegram"width="300" height="40"/></a>
+    <a href="https://t.me/joinsinidongg" target="blank"><img src="https://img.shields.io/badge/GROUP-Zyro Support-blue?style=plastic&logo=telegram"width="300" height="40"/></a>
 </p>
 
-### Temukan saya di telegram: [@zyromusic](t.me/zyromusicbot)
+### Temukan saya di telegram: [@zyroscopebot](t.me/zyroscopebot)
 
 ### Perintah semua anggota grup
 - `/play <nama lagu>` - mainkan lagu kamu 
