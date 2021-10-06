@@ -562,7 +562,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
+                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/katanyasikata"),
                  InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
                 ],
                 [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
@@ -663,7 +663,7 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
+                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/katanyasikata"),
                  InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
                 ],
                 [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
