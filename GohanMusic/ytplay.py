@@ -440,7 +440,7 @@ async def play(_, message: Message):
                 ],
                 [InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=f"{durl}")
                 ],
-                [InlineKeyboardButton(text="🗑ᴄʟᴏsᴇ", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
@@ -457,7 +457,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo = "final.png",
-        caption = f"✧ **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** `{duration}`\n✧ **Status:** `Antrian ke {position}`\n" \
+        caption = f"✧ **Judul:** [{title[:60]}]({url})\n✧ **Durasi:** `{duration}`\n✧ **Status:** `Antrian ke {position}`\n" \
                     + f"✧ **Permintaan** {message.from_user.mention}",
         reply_markup = keyboard
         )
