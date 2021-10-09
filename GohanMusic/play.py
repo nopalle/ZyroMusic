@@ -339,14 +339,14 @@ async def m_cb(b, cb):
                 pass
 
             callsmusic.pytgcalls.leave_group_call(chat_id)
-            await cb.message.edit("**✅ turun dulu ye ngab**")
+            await cb.message.edit("**Turun dulu ye bg**")
         else:
             await cb.answer("Assistant Sedang Tidak Terhubung dengan VCG!", show_alert=True)
 
 @Client.on_message(command(["play", f"play@{bu}"]) & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("**🔄 lagi dicari**")
+    lel = await message.reply("**Lagi dicari**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -400,7 +400,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("**🔎 ketemu ni**")
+    await lel.edit("**Ditemukan**")
     if message.reply_to_message:
         entities = []
         toxt = message.reply_to_message.text or message.reply_to_message.caption
@@ -432,8 +432,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ɴᴏɴɢᴋɪ", url=f"https://t.me/joinsinidongg"),
+                 InlineKeyboardButton("ᴊᴀᴊᴀɴ", url=f"https://saweria.co/nopalle"),
                 ],
                 [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
@@ -453,7 +453,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("**🎵 lagi di proses**")
+        await lel.edit("**Lagi di proses**")
         ydl_opts = {"format": "141/bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -479,8 +479,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/lfmaohaha"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ɴᴏɴɢᴋɪ", url=f"https://t.me/joinsinidongg"),
+                 InlineKeyboardButton("ᴊᴀᴊᴀɴ", url=f"https://saweria.co/nopalle"),
                 ],
                 [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
@@ -493,7 +493,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("**🎵 lagi di proses**")
+        await lel.edit("**Lagi di proses**")
         ydl_opts = {"format": "141/bestaudio[ext=m4a]"}
         
         try:
@@ -502,15 +502,15 @@ async def play(_, message: Message):
           await lel.edit("**anda tidak memberikan judul lagu apapun !**")
         # ᴢʏʀᴏ ᴍᴜsɪᴄ tolol
         try:
-            toxxt = "⚡  dipilih dipilih 3 seribu:\n\n"
+            toxxt = "Dipilih dipilih 3 seribu:\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣"]
 
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title']}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ **Powered by** [{bn}](t.me/{bu})\n\n"
+                toxxt += f" ├ ✧ **Duration** - {results[j]['duration']}\n"
+                toxxt += f" └ ✧ **Powered by** [{bn}](t.me/{bu})\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
@@ -562,8 +562,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/katanyasikata"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ɴᴏɴɢᴋɪ", url=f"https://t.me/joinsinidongg"),
+                 InlineKeyboardButton("ᴊᴀᴊᴀɴ", url=f"https://saweria.co/nopalle"),
                 ],
                 [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
@@ -622,13 +622,13 @@ async def lol_cb(b, cb):
     try:
         x,query,useer_id = typed_.split("|")      
     except:
-        await cb.message.edit("**❌ ngga ketemu bang**")
+        await cb.message.edit("**Ngga ketemu bang**")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
         await cb.answer("bukan lo gblk", show_alert=True)
         return
-    await cb.message.edit("**🔄 lagi di proses**")
+    await cb.message.edit("**Lagi di proses**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -663,8 +663,8 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                 InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/katanyasikata"),
-                 InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", url=f"https://saweria.co/nopalle"),
+                 InlineKeyboardButton("ɴᴏɴɢᴋɪ", url=f"https://t.me/joinsinidongg"),
+                 InlineKeyboardButton("ᴊᴀᴊᴀɴ", url=f"https://saweria.co/nopalle"),
                 ],
                 [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
             ]
