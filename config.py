@@ -12,10 +12,10 @@ API_HASH = getenv("API_HASH")
 ARQ_API_KEY = getenv("ARQ_API_KEY", "QFOTZM-GSZUFY-CHGHRX-TDEHOZ-ARQ")
 BOT_USERNAME = getenv("BOT_USERNAME")
 ASSISTANT_NAME = getenv("ASSISTANT_NAME")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "GroupMusicRandom")
-OWNER = getenv("OWNER", "Tomi_sn")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "joinsinidongg")
+OWNER = getenv("OWNER", "akbarnfal")
 STICKER_ID = getenv("STICKER_ID", "CAACAgUAAxkBAAFF-Bdg-i8JvMgppo9DCVkFV9pPVSprzgACdwIAAsgM0VdqqiQQ6Hdw7CAE")
-BOT_IMAGE = getenv("START_IMAGE", "https://telegra.ph/file/ce8487c5293824c1d4afa.jpg")
+BOT_IMAGE = getenv("START_IMAGE", "")
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
 
