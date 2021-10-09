@@ -13,7 +13,7 @@
         "OWNER": {
           "description": "Masukan Username Telegram Anda Tanpa ==> @ <== [skip ini jika Anda tidak punya]",
           "required": false,
-          "value": "Tomi_sn"
+          "value": "akbarnfal"
         },
         "BOT_IMAGE": {
           "description": "Masukan link gambar anda yang di upload ke telegra.ph [skip ini jika Anda tidak punya]",
@@ -27,7 +27,7 @@
         "SUPPORT_GROUP": {
           "description": "Grup dukungan MusicPlayer Anda Tanpa Menggunakan ==> @ <== [skip ini jika Anda tidak punya]",
           "required": false,
-          "value": "GroupMusicRandom"
+          "value": "joinsinidongg"
         },
         "BOT_TOKEN": {
             "description": "Masukan Bot Token dari @BotFather",
